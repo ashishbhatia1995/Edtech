@@ -1,0 +1,17 @@
+.spacer {
+  flex: 1 1 auto;
+}
+mat-toolbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(90deg, #1976d2 0%, #00bcd4 100%);
+}
+a[mat-button] {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+}
+a.active {
+  border-bottom: 2px solid #fff;
+}

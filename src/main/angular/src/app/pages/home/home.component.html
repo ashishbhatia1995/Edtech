@@ -1,0 +1,19 @@
+<div class="home-page">
+  <section class="carousel-section">
+    <app-course-carousel></app-course-carousel>
+  </section>
+  <section class="search-section">
+    <h2 class="section-title">Find Your Course</h2>
+    <app-search-bar (search)="onSearch($event)"></app-search-bar>
+  </section>
+  <div class="main-content">
+    <aside class="sidebar-section">
+      <h3 class="section-title">Filter by Category</h3>
+      <app-filter-sidebar (filter)="onFilter($event)"></app-filter-sidebar>
+    </aside>
+    <section class="courses-section">
+      <h2 class="section-title">Featured Courses</h2>
+      <app-course-list [courses]="courses"></app-course-list>
+    </section>
+  </div>
+</div>

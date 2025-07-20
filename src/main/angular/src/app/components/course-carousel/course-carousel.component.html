@@ -1,0 +1,11 @@
+<div class="carousel-wrapper">
+  <button mat-icon-button class="carousel-nav left" (click)="prev()">
+    &#8592;
+  </button>
+  <div class="carousel-images">
+    <img *ngFor="let img of images; let i = index" [src]="img" [class.active]="i === currentIndex" [class.inactive]="i !== currentIndex" alt="Course Image {{i+1}}" />
+  </div>
+  <button mat-icon-button class="carousel-nav right" (click)="next()">
+    &#8594;
+  </button>
+</div>

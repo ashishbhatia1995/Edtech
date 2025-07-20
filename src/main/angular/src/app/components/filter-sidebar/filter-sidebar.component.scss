@@ -1,0 +1,30 @@
+.filter-sidebar {
+  background: #f8f9fa;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  width: 200px;
+}
+.filter-sidebar h4 {
+  margin-bottom: 1rem;
+}
+.filter-sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.filter-sidebar li {
+  margin-bottom: 0.5rem;
+}
+.filter-sidebar button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  width: 100%;
+  transition: background 0.2s;
+}
+.filter-sidebar button:hover {
+  background: #0056b3;
+}

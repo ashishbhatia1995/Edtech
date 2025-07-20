@@ -1,0 +1,13 @@
+<div class="carousel-container">
+  <mat-card class="carousel-card">
+    <img [src]="banners[current].image" alt="{{ banners[current].title }}" />
+    <div class="carousel-content">
+      <h2>{{ banners[current].title }}</h2>
+      <p>{{ banners[current].subtitle }}</p>
+      <div class="carousel-actions">
+        <button mat-raised-button color="primary" (click)="prev()">&#8592; Prev</button>
+        <button mat-raised-button color="primary" (click)="next()">Next &#8594;</button>
+      </div>
+    </div>
+  </mat-card>
+</div>

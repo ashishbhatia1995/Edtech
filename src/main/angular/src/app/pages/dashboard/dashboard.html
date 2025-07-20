@@ -1,0 +1,18 @@
+<mat-card class="dashboard-card">
+  <mat-card-title>{{ user.name }}</mat-card-title>
+  <mat-card-subtitle>{{ user.email }}</mat-card-subtitle>
+  <mat-card-content>
+    <h3>Enrolled Courses</h3>
+    <mat-list>
+      <mat-list-item *ngFor="let course of user.enrolledCourses">{{ course }}</mat-list-item>
+    </mat-list>
+    <h3>My Reviews</h3>
+    <mat-list>
+      <mat-list-item *ngFor="let review of user.reviews">
+        <span>{{ review.course }}:</span>
+        <span class="rating">⭐ {{ review.rating }}</span>
+        <span>{{ review.comment }}</span>
+      </mat-list-item>
+    </mat-list>
+  </mat-card-content>
+</mat-card>

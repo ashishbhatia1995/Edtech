@@ -1,0 +1,8 @@
+<div class="filter-sidebar">
+  <h4>Categories</h4>
+  <ul>
+    <li *ngFor="let category of categories">
+      <button (click)="onFilter(category)">{{ category }}</button>
+    </li>
+  </ul>
+</div>

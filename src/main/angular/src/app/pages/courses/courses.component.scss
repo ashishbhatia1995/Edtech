@@ -1,0 +1,38 @@
+.courses-container {
+  padding: 2rem;
+  h2 {
+    margin-bottom: 1.5rem;
+    color: #1976d2;
+    font-weight: 600;
+  }
+  .courses-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: flex-start;
+  }
+  .course-card {
+    width: 300px;
+    min-height: 350px;
+    display: flex;
+    flex-direction: column;
+    img {
+      height: 150px;
+      object-fit: cover;
+      border-radius: 4px 4px 0 0;
+    }
+    .category {
+      display: block;
+      margin-top: 0.5rem;
+      color: #757575;
+      font-size: 0.95rem;
+    }
+    .rating {
+      display: block;
+      margin-top: 0.5rem;
+      color: #ffb300;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+  }
+}
