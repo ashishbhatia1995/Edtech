@@ -19,7 +19,7 @@ jobs:
         working-directory: src/main/angular
         run: npm install
       - name: Build Angular app
-        run: npm run build -- --output-path=dist --base-href=/Edtech/
+        run: npm run build -- --output-path=dist/browser --base-href=/Edtech/
         working-directory: src/main/angular
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
