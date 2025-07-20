@@ -16,7 +16,7 @@ jobs:
         with:
           node-version: '20'
       - name: Install dependencies
-        run: npm ci
+        run: npm install
       - name: Build Angular app
         run: npm run build -- --output-path=dist --base-href=/edtech-frontend/
         working-directory: src/main/angular
