@@ -23,6 +23,6 @@ jobs:
         working-directory: src/main/angular
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
-        with:
+        with: 
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: src/main/angular/dist
